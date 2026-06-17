@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int M, N;
+        cin >> M >> N;
+
+        int ans = M;
+
+        for (int w = 0; w <= M; w++) {
+            int d = N - 3 * w;
+
+            if (d >= 0 && w + d <= M) {
+                int l = M - w - d;
+                ans = min(ans, l);
+            }
+        }
+
+        cout << ans << endl;
+    }
+
+    return 0;
+}

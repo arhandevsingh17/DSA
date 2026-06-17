@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int X;
+	int Y;
+	cin>>X;
+	cin>>Y;
+	if (abs(X-Y)<=2){
+	    cout<<"Interesting";
+	}
+	else{
+	   cout<<"Boring";
+	}
+    return 0;
+}
